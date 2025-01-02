@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParseInt and Number Javascript</title>
+  </head>
+  <body>
+    <h1>ParseInt and Number Javascript</h1>
+  </body>
+
+  <script>
+    //EXAMPLE: ParseInt() Es example string mai hamray pass number "10.45" hai es ko hum number mai covert karengy jab parseInt() use
+    console.log("======================================Example 1 Parseint()");
+    // karengy tu hamray pass print huga  10 print hoga q k wo decmial ko ignore kr diya hai
+    let num1 = "10.45"; //parseInt() sirf integer numbers ko parse karta hai, aur agar string mein decimal ho, to decimal part ignore
+    //  ho jata hai.
+    let convertedNum = parseInt(num1);
+    console.log(num1);
+    console.log(typeof num1);
+    console.log(typeof convertedNum);
+    console.log(convertedNum);
+    // Example 2 parseInt() string ke starting part ko parse karta hai, jab tak ek valid number mil raha ho.
+    console.log("======================================Example 2 Parseint()");
+    //let num2 = "asd123abc"; // agar string number se shuru nahi hoti, to parseInt() NaN return karega.
+    let num2 = "123abc";
+    let convertedNum2 = parseInt(num2);
+    // console.log(num2);
+    console.log(typeof num2);
+    console.log(typeof convertedNum2);
+    console.log(num2);
+    console.log(convertedNum2);
+    //============================ string to  Number
+    console.log("======================================string to  Number()");
+    // ye same parseint() ke tarhaa hain agar hamary pass string mai number hai tu usko hum string mai convert karengy
+    // liken parseint() mai jab hamray pass decmial number ta for example "10.45" hai to decimal part ignore ho jata hai.
+    //jut 10 print huta liken es mai hamra pass decimal b print huga q k wo decmial ko ignore nhii kartaa
+    let value = "10.45";
+    let convertedValue = Number(value);
+    // yaha hum nai jab value ka type check ya tu string hai ab convertedValue ka type check ya tu number hai
+    console.log(typeof value);
+    console.log(typeof convertedValue);
+    console.log(value);
+    console.log(convertedValue); // yaha per output huga 10.45 q k wo decmial ko ignore nhii huta type b number huga
+
+    console.log("======================================-======");
+    let score = null;
+    console.log(typeof score);
+    console.log(score);
+
+    let changeToNum = Number(score);
+    console.log(typeof changeToNum);
+    console.log(changeToNum);
+  </script>
+</html>

@@ -1,0 +1,61 @@
+Ternary Operator ka concept bohot simple aur powerful hai. Yeh ek short-hand hai if-else statements ka, jo aapko code ko concise aur readable banane mein madad karta hai.
+
+Definition:
+Ternary operator ek single-line conditional statement hai jo ek condition ko check karta hai aur uske result ke basis par value assign karta hai.
+
+Syntax:
+javascript
+Copy code
+condition ? expression_if_true : expression_if_false;
+condition: Yeh check kiya jata hai (true ya false).
+expression_if_true: Agar condition true ho, to yeh execute hoga.
+expression_if_false: Agar condition false ho, to yeh execute hoga.
+Example 1: Simple Example
+javascript
+Copy code
+let age = 18;
+let message = age >= 18 ? "You are eligible to vote" : "You are not eligible to vote";
+console.log(message);
+Output: You are eligible to vote
+
+Example 2: Number Comparison
+javascript
+Copy code
+let num1 = 10, num2 = 20;
+let result = num1 > num2 ? "num1 is greater" : "num2 is greater";
+console.log(result);
+Output: num2 is greater
+
+Example 3: Nested Ternary Operator
+javascript
+Copy code
+let marks = 85;
+let grade = marks >= 90 ? "A+" : marks >= 75 ? "A" : "B";
+console.log(grade);
+Output: A
+
+Ternary vs If-Else:
+Ternary Operator:
+
+javascript
+Copy code
+let x = 5;
+let message = x > 10 ? "Greater than 10" : "10 or less";
+If-Else:
+
+javascript
+Copy code
+let x = 5;
+let message;
+if (x > 10) {
+  message = "Greater than 10";
+} else {
+  message = "10 or less";
+}
+Kya ab aapko samajh aaya? Agar koi question ya example chahiye, to poochh lijiye! 😊
+
+
+
+
+
+

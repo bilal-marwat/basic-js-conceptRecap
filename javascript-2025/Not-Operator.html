@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOT Oerator in Javascript</title>
+  </head>
+  <body>
+    <h1>NOT Operator in Javascript</h1>
+  </body>
+  <script>
+    // ! (NOT) Operator Kya Hai?
+
+    //!ek logical operator hai jo kisi bhi result ko ulta kar deta hai:
+
+    // Agar koi cheez true ho, to ! usko false bana dega.
+
+    // Agar koi cheez false ho, to ! usko true bana dega.
+
+    let isSunny = true;
+    console.log(!isSunny); // yaha per value hamary pass true hain liken reult mai false show huga q k !NOT OPERATOR resul ko ulta kr deta
+
+    let isRainy = false; // yaha per pass false hain liken result mai true show why? q k not operator result ulta hugayaaa isliyee true show ga
+    console.log(!isRainy);
+
+    // zaero is falsey value in javascript
+    console.log("zero is falsey value in javascript");
+    console.log(!0);
+
+    // one is truthly value is javscript
+    console.log("one is true value");
+    console.log(!1);
+    console.log("-42 is true value");
+
+    console.log(!-42); // Output: false (kyunki non-zero is true)
+
+    // empty string is false
+    console.log("empty string is false");
+    console.log(!"");
+
+    // non-empty string true value
+    console.log("non-string is true value in javascript");
+    console.log(!"Bilal");
+
+    // equal == and not eqaul !=
+    console.log("=======================eqaul == and not qual !=");
+
+    let a = 5;
+    let b = 5;
+    let check = a == b; // this example is == equal beacuse donoo value same agar same nhii huwi tu false
+    console.log(check);
+
+    let c = 10;
+    let d = 9;
+    let finalRes = c != d;
+    console.log(finalRes);
+
+    // grater than > and less than < example with not operator !
+    console.log("=======================grater than > and less than <");
+
+    let x = 10;
+    let y = 20;
+    let z = x < y;
+    let w = x > y;
+    console.log(z); // ab yaha per hum show karty hain k x is less than y matlab y bara hain x sy but jab hum console.log mai z k saath! yee lagyen tu result false huga q not operator ke waja sy
+    console.log(w);
+
+    let userAge = 22;
+    console.log(!userAge > 18 && userAge < 30);
+
+    // 1 example with email
+    console.log("=======================example 1=====================");
+    let bilalEmail = "  BilAlMar  wat  134@gmail.com   ";
+    let cleanedBilalEmail = bilalEmail.toLowerCase().trim().replace(/\s+/g, "");
+    if (cleanedBilalEmail.endsWith("@gmail.com")) {
+      console.log("Email is valid");
+    } else {
+      console.log("Please corect your email");
+    }
+    // console.log(cleanedBilalEmail);
+
+    // example 2
+    console.log("=======================example 2=====================");
+
+    let awaisEmail = "  john.doe@examp  le.com   ";
+    let cleanedAwaisEmail = awaisEmail.trim().toLowerCase().replace(/ /g, "");
+    // console.log(cleanedAwaisEmail);
+
+    if (!cleanedAwaisEmail.includes("@")) {
+      console.log("Invalid email!");
+    } else {
+      console.log("Valid email!");
+    }
+
+    //Example 3
+    console.log("=======================example 3=====================");
+
+    let email = " john.doe@examp  le.com ";
+    let cleanedEmail = email.trim().toLowerCase().replace(/ /g, "");
+
+    if (!cleanedEmail.includes("@")) {
+      console.log("Invalid email!");
+    } else {
+      console.log("Valid email!");
+    }
+
+    // example 4
+
+    // let enterYourEmail = prompt("please enter your email");
+    // let userEmailEnter = enterYourEmail.trim().toLowerCase().replace(/ /g, "");
+    // if (!userEmailEnter.includes("@")) {
+    //   console.log("Invalid email!");
+    // } else {
+    //   console.log("Valid email!");
+    // }
+    // console.log(userEmailEnter);
+
+    // example 5
+    console.log("=======================example 5=====================");
+
+    // let userEmail = prompt("please enter your email");
+
+    // let cleanUserEamail = userEmail.trim().toLowerCase().replace(/ /g, "");
+
+    // if (cleanUserEamail === "") {
+    //   console.log("Invalid email!");
+    // } else if (!cleanUserEamail.includes("@gmail.com")) {
+    //   console.log("Invalid email!");
+    // } else {
+    //   console.log("Valid email!");
+    // }
+    // console.log(cleanUserEamail);
+
+    let ahmed = "Muhammad ahmed";
+    let ahmedSlice = ahmed.slice(4, 9); // negative value accept karta hai
+    console.log(ahmed);
+    console.log(ahmedSlice);
+
+    let name = "Bilal khan";
+    let naemRes = name.substring(1, 5);
+    console.log(naemRes);
+
+    let name2 = "Bilal khan";
+    console.log(name2.charAt(2));
+
+    let name3 = "Muhammad Bilal Marwat";
+    console.log(name3.length);
+
+    console.log(name3.endsWith("Marwat", 21));
+
+    let name4 = "Muhammad Bilal Marwat";
+    console.log(name4.startsWith("Muhammad"));
+  </script>
+</html>
